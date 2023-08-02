@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: lavender;
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titlecontainer {
+    display: flex;
+    justify-content: center;
+    margin: -25px 0 20px 0;
+    font-size: 40px;
+    transition: 700ms ease;
+    letter-spacing: 3px;
+}
+
+.titlecontainer:hover {
+    letter-spacing: 8px;
+}
+
+.answerboxes {
+    display: inline-block;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 6px, rgb(0, 0, 0) 0px 0px 0px 12px, rgb(25, 0, 255) 0px 0px 0px 18px;
+    border-radius: 10px;
+}
+
+.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow, .sixthrow {
+    display: flex;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    border: 1px black solid;
+    background-color: white;
+}
+
+.simple-keyboard {
+    margin-top: 30px;
+    padding: 0 25%;
+    background-color: lavender;
+    font-family: 'Sen', sans-serif;
+    font-size: 28px;
+}
+
+.hg-row:nth-of-type(3) {
+    padding: 0 36% 0 0%;
+}
+
+.hg-row:nth-of-type(2) {
+    padding: 0 10% 0 4%;
+}
+
+.backspaceBtn {
+    font-size: 24px;
+}
+
+
+
+.notWord {
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.gameOver {
+    position: absolute;
+    display: none;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.zoom-in {
+    animation: zoomIn 2s ease forwards;
+}
+
+.zoom-in-finish {
+    animation: zoomIn2 1s ease forwards;
+}
+
+.zoom-in-gameover {
+    animation: zoomIn3 2s ease forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes zoomIn2 {
+    0% {
+        font-size: 48px;
+        opacity: 1;
+    }
+    100% {
+        font-size: 40px;
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn3 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
