@@ -103,6 +103,9 @@ fetch ("./lemmad.txt")
                     boxes[c2].style.backgroundColor = "orange";
                     const foundKeyOrange = Array.from(KBbuttons).find((element) => element.innerText === boxes[c2].innerText);
                     foundKeyOrange.style.backgroundColor = "orange";
+                } else {
+                    const foundKeyGray = Array.from(KBbuttons).find((element) => element.innerText === boxes[c2].innerText);
+                    foundKeyGray.style.backgroundColor = "darkgray";
                 }
                 c2++;
             }

@@ -74,6 +74,7 @@ body {
     background-color: white;
     border-radius: 20px;
     padding: 50px;
+    z-index: 1;
 }
 
 .gameOver {
@@ -83,6 +84,7 @@ body {
     background-color: white;
     border-radius: 20px;
     padding: 50px;
+    z-index: 1;
 }
 
 .zoom-in {
